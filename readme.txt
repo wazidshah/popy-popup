@@ -1,8 +1,8 @@
-=== Popy – Simple WordPress Popups ===
+=== Popy – Simple Popups ===
 Contributors: wazidshah
 Tags: popup, modal, timed popup, cookie, WPBakery
 Requires at least: 5.5
-Tested up to: 6.5
+Tested up to: 7.0
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: GPL-2.0-or-later
@@ -32,14 +32,9 @@ Popy lets you display a beautiful timed popup on your WordPress site — and rem
 * Live preview in the admin panel — see changes as you type.
 * "Reset cookie" button in the admin so you can re-test without clearing browser cookies.
 * Compatible with WPBakery Page Builder.
-* Auto-updates via GitHub Releases — no manual ZIP uploads needed.
 * Accessibility-ready: `role="dialog"`, `aria-modal`, focus management, and ESC-key support.
 * Respects `prefers-reduced-motion`.
 * No third-party scripts, no tracking, no upsells.
-
-**Auto-updates**
-
-Popy self-updates from its GitHub Releases page. When a new version is tagged, WordPress will surface the update in **Dashboard → Updates** exactly like a repository plugin.
 
 == Installation ==
 
@@ -64,10 +59,6 @@ Yes. Both `mailto:` and `tel:` schemes are supported in the button URL fields.
 = Is it compatible with caching plugins? =
 
 Yes. The cookie check happens entirely in JavaScript on the client side, so it works correctly even when pages are served from cache.
-
-= How do auto-updates work? =
-
-Popy checks the GitHub Releases page for the plugin repository. When a new release is tagged, WordPress will notify you in the admin dashboard just like any other plugin update.
 
 == Screenshots ==
 
