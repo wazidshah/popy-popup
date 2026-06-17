@@ -1,0 +1,43 @@
+# SVN ignore patterns for the Popy WordPress.org trunk
+#
+# SVN doesn't read a .svnignore file automatically — these patterns must be
+# applied as a property on the trunk directory using:
+#
+#   svn propset svn:ignore -F svn-ignore.txt trunk/
+#
+# Run that once after your first checkout (see setup-svn.sh). After that,
+# SVN will skip these files/folders when you run `svn add trunk/* --force`
+# or `svn status`.
+
+.git
+.gitignore
+.gitattributes
+.github
+
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+node_modules
+vendor
+
+*.zip
+*.tar.gz
+build
+dist
+
+.env
+.env.local
+
+includes/class-popy-updater.php
+
+*.log
+npm-debug.log*

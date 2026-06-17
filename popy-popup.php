@@ -1,15 +1,13 @@
 <?php
 /**
- * Plugin Name:       Popy – Simple WordPress Popups
- * Plugin URI:        https://github.com/wazidshah/popy-popup
+ * Plugin Name:       Popy – Simple Popups
  * Description:       Timed Popups That Respect Your Visitors. Show a beautiful timed popup with cookie-based dismissal. Compatible with WPBakery Page Builder.
  * Version:           1.0.0
  * Requires at least: 5.5
  * Requires PHP:      7.4
  * Author:            Wazid Shah
- * Author URI:        https://wazidshah.com
- * Text Domain:       popy
- * Domain Path:       /languages
+ * Author URI:        https://github.com/wazidshah
+ * Text Domain:       popy-popup
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
@@ -19,17 +17,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'POPY_VERSION',    '1.0.0' );
-define( 'POPY_FILE',       __FILE__ );
 define( 'POPY_PATH',       plugin_dir_path( __FILE__ ) );
 define( 'POPY_URL',        plugin_dir_url( __FILE__ ) );
 define( 'POPY_OPTION_KEY', 'popy_settings' );
 
-// GitHub repo for auto-updates (owner/repo format).
-define( 'POPY_GITHUB_REPO', 'wazidshah/popy-popup' );
-
 require_once POPY_PATH . 'includes/class-popy-settings.php';
 require_once POPY_PATH . 'includes/class-popy-frontend.php';
-require_once POPY_PATH . 'includes/class-popy-updater.php';
 
 /**
  * Bootstrap.
@@ -38,11 +31,8 @@ function popy_init() {
 	Popy_Settings::get_instance();
 	Popy_Frontend::get_instance();
 
-	// Auto-updater — checks GitHub releases.
-	new Popy_Updater( POPY_FILE, POPY_GITHUB_REPO, POPY_VERSION );
-
 	// Load translations.
-	load_plugin_textdomain( 'popy', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+	load_plugin_textdomain( 'popy-popup', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 add_action( 'plugins_loaded', 'popy_init' );
 

@@ -84,7 +84,7 @@ class Popy_Frontend {
 		<div id="popyOverlay" class="popy-overlay" role="dialog" aria-modal="true" aria-labelledby="popyDialogTitle" style="display:none">
 			<div class="popy-box" id="popyBox">
 
-				<button class="popy-x" id="popyClose" aria-label="<?php esc_attr_e( 'Close popup', 'popy' ); ?>">&#x2715;</button>
+				<button class="popy-x" id="popyClose" aria-label="<?php esc_attr_e( 'Close popup', 'popy-popup' ); ?>">&#x2715;</button>
 
 				<?php if ( ! empty( $o['icon'] ) ) : ?>
 				<div class="popy-icon" aria-hidden="true"><?php echo esc_html( $o['icon'] ); ?></div>
