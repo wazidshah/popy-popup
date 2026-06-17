@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Popy – Simple Popups
- * Description:       Timed Popups That Respect Your Visitors. Show a beautiful timed popup with cookie-based dismissal. Compatible with WPBakery Page Builder.
+ * Description:       Timed Popups That Respect Your Visitors. Show a beautiful timed popup with cookie-based dismissal. Works with any theme or page builder.
  * Version:           1.0.0
  * Requires at least: 5.5
  * Requires PHP:      7.4

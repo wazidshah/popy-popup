@@ -1,6 +1,6 @@
 === Popy – Simple Popups ===
 Contributors: wazidshah
-Tags: popup, modal, timed popup, cookie, WPBakery
+Tags: popup, modal, timed popup, cookie, gutenberg
 Requires at least: 5.5
 Tested up to: 7.0
 Requires PHP: 7.4
@@ -31,7 +31,7 @@ Popy lets you display a beautiful timed popup on your WordPress site — and rem
 * Optional close-on-overlay-click.
 * Live preview in the admin panel — see changes as you type.
 * "Reset cookie" button in the admin so you can re-test without clearing browser cookies.
-* Compatible with WPBakery Page Builder.
+* Works with any theme or page builder — Gutenberg, Elementor, Divi, WPBakery, and more.
 * Accessibility-ready: `role="dialog"`, `aria-modal`, focus management, and ESC-key support.
 * Respects `prefers-reduced-motion`.
 * No third-party scripts, no tracking, no upsells.
